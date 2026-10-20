@@ -1,29 +1,53 @@
-# 깃 허브 사용 첫번째
+# 클래스로(Classro) 회사 소개 웹사이트
 
-git init    # 한번
+동네 공방·작업실의 원데이 클래스를 앱에서 찾고 바로 예약·결제하는 서비스 **클래스로**의 소개 페이지입니다.
+`00_회사소개.md` 내용을 기준으로 만든 정적 웹사이트입니다.
 
+> 수업용 가상 회사입니다. 등장하는 회사·인물·수치는 모두 지어낸 것입니다.
 
-git add README.md  
+## 폴더 구조
 
-git add .  (모든 파일)
-git commit -m "first commit"
+```
+TEST/
+├── index.html        # 메인 페이지
+├── css/
+│   └── style.css     # 스타일 (반응형 포함)
+├── js/
+│   └── script.js     # 모바일 메뉴, 숫자 카운트업, 스크롤 등장 효과
+├── 00_회사소개.md     # 콘텐츠 원본
+└── README.md
+```
 
-git add README.md
-git commit -m "seconde commit"
+## 실행 방법
 
-# 여러번 구간
+빌드 과정이 없습니다. `index.html`을 브라우저로 열면 됩니다.
 
+로컬 서버로 확인하려면 다음 명령을 사용합니다.
 
-git remote add origin https://github.com/younghee7405/test.git  #한번만
+```bash
+npx serve .
+# 또는
+python -m http.server 8000
+```
 
+## 페이지 구성
 
+| 섹션 | 내용 |
+| --- | --- |
+| 첫 화면 | 한 줄 소개, 클래스 종류 |
+| 소개 | 제휴 공방·월 예약 등 핵심 수치 |
+| 기본 정보 | 설립, 대표, 직원, 수익 모델 등 |
+| 이용 흐름 | 방문 → 예약 완료 6단계 |
+| 분기 목표 | 2026년 4분기 목표 3가지 |
+| 최근 소식 | 앱 v2.3.0 배포, 광고 채널 변경 등 |
+| 팀별 고민 | 개발·디자인·PO·마케팅 |
 
-git branch -M main   # main 대신 다른 이름으로 사용가능   한번만 사용
+## 기술 스택
 
-git push -u origin main   #main branch 이름 여러번 사용
+- HTML5, CSS3, 바닐라 JavaScript (외부 라이브러리 없음)
+- 반응형 레이아웃 (모바일 720px, 태블릿 900px 기준)
 
-<!-- git branch -M leetest
-git push -u origin leetest -->
+## 내용 수정
 
-
-깃 연습 하는 중 
+텍스트와 수치는 `index.html`에서 직접 수정합니다.
+색상은 `css/style.css` 상단의 `:root` 변수에서 바꿀 수 있습니다.

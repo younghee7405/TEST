@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클래스로(Classro) - 동네 공방 원데이 클래스 예약</title>
+  <meta name="description" content="동네 공방·작업실의 원데이 클래스를 앱에서 찾고 바로 예약·결제하는 서비스, 클래스로.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">클래스로<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#about">소개</a>
+        <a href="#info">기본 정보</a>
+        <a href="#flow">이용 흐름</a>
+        <a href="#goals">분기 목표</a>
+        <a href="#news">최근 소식</a>
+        <a href="#teams">팀별 고민</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="eyebrow">ONE-DAY CLASS PLATFORM</p>
+        <h1>오늘, 손으로 만드는<br>하루를 예약하세요</h1>
+        <p class="hero__lead">동네 공방·작업실의 원데이 클래스를<br class="pc-only">앱에서 찾고 바로 예약·결제하는 서비스</p>
+        <ul class="chips">
+          <li>도자기</li><li>베이킹</li><li>가죽공예</li><li>플라워</li><li>드로잉</li><li>향수</li>
+        </ul>
+        <a href="#info" class="btn">회사 알아보기</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title">한 줄 소개</h2>
+        <p class="about__text">
+          클래스로는 <strong>약 420곳의 제휴 공방</strong>과 수강생을 연결합니다.
+          검색부터 예약, 결제까지 앱 하나로 끝낼 수 있습니다.
+        </p>
+        <div class="stats">
+          <div class="stat"><span class="stat__num" data-count="420">0</span><span class="stat__unit">곳</span><p>제휴 공방</p></div>
+          <div class="stat"><span class="stat__num" data-count="7000">0</span><span class="stat__unit">건</span><p>월 예약 (2026.9 기준)</p></div>
+          <div class="stat"><span class="stat__num" data-count="42000">0</span><span class="stat__unit">원</span><p>1인 평균 결제액</p></div>
+          <div class="stat"><span class="stat__num" data-count="30">0</span><span class="stat__unit">명</span><p>함께하는 구성원</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="info">
+      <div class="container">
+        <h2 class="section__title">기본 정보</h2>
+        <div class="table-wrap">
+          <table class="info-table">
+            <tbody>
+              <tr><th>설립</th><td>2023년 3월</td></tr>
+              <tr><th>대표</th><td>한서윤</td></tr>
+              <tr><th>직원</th><td>30명 <small>(개발 11, 디자인 4, PO 3, 마케팅 5, 운영·CS 5, 경영지원 2)</small></td></tr>
+              <tr><th>서비스</th><td>iOS·Android 앱, 모바일 웹</td></tr>
+              <tr><th>제휴 공방</th><td>약 420곳 <small>(서울 280, 경기 110, 기타 30)</small></td></tr>
+              <tr><th>월 예약</th><td>약 7천 건 <small>(2026년 9월 기준)</small></td></tr>
+              <tr><th>평균 결제액</th><td>1인 42,000원</td></tr>
+              <tr><th>수익 모델</th><td>예약 건당 수수료 15%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="flow">
+      <div class="container">
+        <h2 class="section__title">핵심 사용자 흐름</h2>
+        <ol class="steps">
+          <li><span>1</span>방문</li>
+          <li><span>2</span>검색/탐색</li>
+          <li><span>3</span>클래스 상세</li>
+          <li><span>4</span>예약 시작<small>날짜·인원 선택</small></li>
+          <li><span>5</span>결제</li>
+          <li><span>6</span>예약 완료</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="goals">
+      <div class="container">
+        <h2 class="section__title">이번 분기(2026년 4분기) 목표</h2>
+        <div class="cards cards--3">
+          <article class="card">
+            <span class="card__no">01</span>
+            <h3>예약 전환율 회복</h3>
+            <p>방문 대비 예약 완료율이 최근 4주 <strong>2.7%</strong>로 하락(이전 4주 3.9%). <strong>3.9%</strong> 회복을 목표로 합니다.</p>
+          </article>
+          <article class="card">
+            <span class="card__no">02</span>
+            <h3>앱 리뷰 평점 유지</h3>
+            <p>앱 리뷰 평점 <strong>4.5</strong>를 유지합니다.</p>
+          </article>
+          <article class="card">
+            <span class="card__no">03</span>
+            <h3>마케팅 CAC 관리</h3>
+            <p>예약 1건당 광고비 <strong>9,000원 이하</strong>를 달성합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="container">
+        <h2 class="section__title">최근 있었던 일</h2>
+        <ul class="timeline">
+          <li>
+            <time>2026-09-28</time>
+            <p>앱 <strong>v2.3.0</strong> 배포 — 결제 화면 개편, 간편결제 추가</p>
+          </li>
+          <li>
+            <time>2026-09-28 주~</time>
+            <p>마케팅팀이 예산 일부를 인스타그램에서 <strong>신규 디스플레이 광고 네트워크(display_net)</strong>로 이동 (클릭당 단가가 싸다는 이유)</p>
+          </li>
+          <li>
+            <time>2026-10월</time>
+            <p>리뷰 평점 하락, CS 문의 증가</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="teams">
+      <div class="container">
+        <h2 class="section__title">팀별 고민</h2>
+        <div class="cards cards--2">
+          <article class="card">
+            <h3>개발</h3>
+            <p>결제 API 응답이 느려졌다는 제보. 테스트 커버리지 낮음</p>
+          </article>
+          <article class="card">
+            <h3>디자인</h3>
+            <p>결제 화면 개편 후 사용성 테스트를 못 함. 디자인 가이드가 문서로만 존재</p>
+          </article>
+          <article class="card">
+            <h3>PO</h3>
+            <p>VOC가 Slack·이메일·앱 리뷰에 흩어져 있어 우선순위를 못 정함</p>
+          </article>
+          <article class="card">
+            <h3>마케팅</h3>
+            <p>주간 광고 리포트를 매주 월요일 3시간씩 수작업으로 정리</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="logo logo--footer">클래스로<span>.</span></p>
+      <p class="footer__note">수업용 가상 회사입니다. 등장하는 회사·인물·수치는 모두 지어낸 것입니다.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
