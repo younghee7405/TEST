@@ -1,13 +1,12 @@
 # 깃 허브 사용 첫번째
 
-git init    # 
+git init    # 한번
 
 
-git add README.md  #한번만
+git add README.md  
 
 git add .  (모든 파일)
 git commit -m "first commit"
-
 
 git add README.md
 git commit -m "seconde commit"
